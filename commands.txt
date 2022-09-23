@@ -1,0 +1,31 @@
+curl -X POST -H "Content-Type:application/json" -d "{\"artist\": \"Sonic Youth\", \"title\": \"Silver Rocket\",\"duration\": 200}" http://localhost:8000/tracks/
+
+curl -X PUT -H "Content-Type:application/json" -d "{\"artist\": \"Sonic Youth remastered\", \"title\": \"Silver Rocket\", \"duration\": 250}" http://localhost:8000/tracks/11
+
+
+curl -X DELETE http://localhost:8000/tracks/11
+
+
+//for setting environment
+python -m venv venv
+venv/Scrpts/activate
+
+// For test
+step1
+```
+pip install pytest 
+```
+step2
+```
+python -m pytest test.py
+```
+//For server
+step1
+```
+pip install fastapi pydantic uvicorn
+```
+step2
+```
+uvicorn main:app
+```
+
